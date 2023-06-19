@@ -1,0 +1,12 @@
+SOLUTION 1 [Time complexity o(n)]
+
+def check(self,A,B,N):
+        A.sort()
+        B.sort()
+        if A==B:
+            return True
+        return False
+        
+        
+        
+        
