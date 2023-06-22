@@ -1,0 +1,11 @@
+class Solution:
+    #Function to find triplets with zero sum.    
+    def findTriplets(self, arr, n):
+        for i in range(n):
+            for j in range(n-1,-1,-1):                   #traversing from right to left
+                total=arr[i]+arr[j]                      #instead of looking for a+b+c=0
+                if (-total) in arr[i+1:j]:               #loof for a+b=(-c)
+                    return 1
+                
+        return 0
+        
